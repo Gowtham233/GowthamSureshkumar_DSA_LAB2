@@ -36,13 +36,13 @@ public class MergeSortDesc {
 			}
 			k++;
 		}
-		// Initial index of merged sub-array array
+		/* Copy remaining elements of L[] if any */
 		while (i < size1) {
 			arr[k] = leftArray[i];
 			i++;
 			k++;
 		}
-
+		/* Copy remaining elements of R[] if any */
 		while (j < size2) {
 			arr[k] = rightArray[j];
 			j++;
